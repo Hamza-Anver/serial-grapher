@@ -58,10 +58,16 @@ export function AppSidebar() {
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
-              <ThemeToggle />
+
+              
+              
             </SidebarMenu>
+
           </SidebarGroupContent>
         </SidebarGroup>
+        <div className="absolute bottom-3 left-3">
+            <ThemeToggle />
+        </div>
       </SidebarContent>
     </Sidebar>
   )
