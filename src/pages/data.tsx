@@ -8,8 +8,12 @@ export const metadata = {
 };
 
 import Head from "next/head";
+import React from "react";
+import { HeaderContext } from "./layout";
 
 export default function DataSourcePage() {
+  const { setHeader } = React.useContext(HeaderContext);
+  setHeader(metadata.title);
   return (
     <div>
       <Head>

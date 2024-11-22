@@ -40,7 +40,12 @@ const items = [
   },
 ]
 
+// State for header
+
+
+
 export function AppSidebar() {
+
   return (
     <Sidebar>
       <SidebarContent>
@@ -70,3 +75,5 @@ export function AppSidebar() {
     </Sidebar>
   )
 }
+
+
