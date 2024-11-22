@@ -1,8 +1,18 @@
 import CardDemo from "@/components/graphs/graph";
 
-export default function TableDemo() {
+import Head from "next/head";
+
+export const metadata = {
+  title: "Serial Grapher",
+  description: "Graph your serial data.",
+};
+
+export default function IndexPage() {
   return (
-    <div className="m-3">
+    <div>
+      <Head>
+        <title>{metadata.title}</title>
+      </Head>
       <CardDemo></CardDemo>
     </div>
   );

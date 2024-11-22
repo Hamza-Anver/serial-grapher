@@ -1,4 +1,4 @@
-import { Calendar, Home, Inbox, Search, Settings } from "lucide-react"
+import { Calendar, DatabaseZapIcon, Search, Settings, TrendingUpDownIcon } from "lucide-react"
 import { ThemeToggle } from "./theme-toggle"
 import {
   Sidebar,
@@ -14,14 +14,14 @@ import {
 // Menu items.
 const items = [
   {
-    title: "Home",
-    url: "#",
-    icon: Home,
+    title: "Graph Dash",
+    url: "/",
+    icon: TrendingUpDownIcon,
   },
   {
-    title: "Inbox",
-    url: "#",
-    icon: Inbox,
+    title: "Data Source",
+    url: "data",
+    icon: DatabaseZapIcon,
   },
   {
     title: "Calendar",
@@ -59,8 +59,6 @@ export function AppSidebar() {
                 </SidebarMenuItem>
               ))}
 
-              
-              
             </SidebarMenu>
 
           </SidebarGroupContent>
