@@ -11,6 +11,9 @@ import Head from "next/head";
 import React from "react";
 import { HeaderContext } from "./layout";
 
+import InputSourceList from "@/components/datasource/sourcelist";
+import DataStreamProvider from "@/components/logical/datastream";
+
 export default function DataSourcePage() {
   const { setHeader } = React.useContext(HeaderContext);
   setHeader(metadata.title);
@@ -20,7 +23,7 @@ export default function DataSourcePage() {
         <title>{metadata.title}</title>
       </Head>
       <Container title="test">
-        <p>DATA MODE</p>
+          <InputSourceList />
       </Container>
     </div>
   );

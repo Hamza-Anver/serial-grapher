@@ -22,7 +22,10 @@ import {
 import { AppSidebar } from "@/components/app-sidebar";
 import { Separator } from "@/components/ui/separator";
 
-export default function HeaderProvider({ children }: { children: ReactNode }) {
+// Import contexts for client side data sharing
+import DataStreamProvider from "@/components/logical/datastream";
+
+export default function Layout({ children }: { children: ReactNode }) {
   const [header, setHeader] = useState("Serial Grapher");
 
   return (
@@ -35,10 +38,11 @@ export default function HeaderProvider({ children }: { children: ReactNode }) {
             <Separator orientation="vertical" className="mr-2 h-4" />
             <h1 className="text-xl font-bold">{header}</h1>
           </header>
-          <main>{children}</main>
+          <DataStreamProvider>
+            <main>{children}</main>
+          </DataStreamProvider>
         </SidebarInset>
       </SidebarProvider>
     </HeaderContext.Provider>
   );
 }
-
