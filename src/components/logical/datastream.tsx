@@ -7,6 +7,7 @@ import {
 } from "react";
 import { ReactNode } from "react";
 
+
 interface DataStreamContextType {
   datastream: string[];
   setDataStream: Dispatch<SetStateAction<string[]>>;
@@ -28,6 +29,7 @@ export default function DataStreamProvider({
 }) {
   const [datastream, setDataStream] = useState([""]);
 
+  
   const addToStream = (data: string) => {
     const newDataStream = [...datastream, data];
     setDataStream(newDataStream);

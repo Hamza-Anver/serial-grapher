@@ -1,6 +1,5 @@
 'use client'
 
-import { Container } from "@/components/ui/generic-card";
 
 export const metadata = {
   title: "Data Source",
@@ -12,7 +11,6 @@ import React from "react";
 import { HeaderContext } from "./layout";
 
 import InputSourceList from "@/components/datasource/sourcelist";
-import DataStreamProvider from "@/components/logical/datastream";
 
 export default function DataSourcePage() {
   const { setHeader } = React.useContext(HeaderContext);
@@ -22,9 +20,7 @@ export default function DataSourcePage() {
       <Head>
         <title>{metadata.title}</title>
       </Head>
-      <Container title="test">
-          <InputSourceList />
-      </Container>
+        <InputSourceList />
     </div>
   );
 }
