@@ -27,7 +27,7 @@ export const Container: React.FC<ContainerProps> = ({
   footer,
 }) => {
   return (
-    <Card className={`${className || "m-3"}`}>
+    <Card className={`${className || "relative m-3"}`}>
       <CardHeader>
         {title && <CardTitle>{title}</CardTitle>}
         {description && <CardDescription>{description}</CardDescription>}

@@ -22,6 +22,8 @@ import {
 import { AppSidebar } from "@/components/app-sidebar";
 import { Separator } from "@/components/ui/separator";
 
+import { Toaster } from "@/components/ui/toaster"
+
 // Import contexts for client side data sharing
 import LocalStorageProvider from "@/components/logical/localstorage";
 
@@ -43,6 +45,7 @@ export default function Layout({ children }: { children: ReactNode }) {
           </SidebarInset>
         </SidebarProvider>
       </LocalStorageProvider>
+      <Toaster />
     </HeaderContext.Provider>
   );
 }
