@@ -1,4 +1,4 @@
-import { Calendar, DatabaseZapIcon, Search, Settings, TrendingUpDownIcon } from "lucide-react"
+import { DatabaseZapIcon, Settings, TrendingUpDownIcon } from "lucide-react"
 import { ThemeToggle } from "./theme-toggle"
 import {
   Sidebar,
@@ -20,18 +20,8 @@ const items = [
   },
   {
     title: "Data Source",
-    url: "data",
+    url: "datasource",
     icon: DatabaseZapIcon,
-  },
-  {
-    title: "Calendar",
-    url: "#",
-    icon: Calendar,
-  },
-  {
-    title: "Search",
-    url: "#",
-    icon: Search,
   },
   {
     title: "Settings",
@@ -39,10 +29,6 @@ const items = [
     icon: Settings,
   },
 ]
-
-// State for header
-
-
 
 export function AppSidebar() {
 
