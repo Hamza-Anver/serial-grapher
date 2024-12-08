@@ -1,3 +1,31 @@
+# Program flow
+
+Wrapping around the entire project is a method for storing and moving around data streams.
+TODO: need to figure this out, how do I move around data from source to graph
+
+Every object needs an ID, need a mini db to manage all of this. 
+Every object is represented by the following structure:
+[id] : {
+    visualformat: {....}
+}
+
+
+There is a manager object which has the array of data sources and graphs
+
+Every data source has the following functions:
+
+
+Every graph object will have the following functions:
+1. append data
+2. load data set
+3. edit params
+
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
 ## Getting Started

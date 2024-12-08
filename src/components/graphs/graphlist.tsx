@@ -55,7 +55,7 @@ export default function GraphList() {
   };
 
   return (
-    <>
+    <div className="">
       <Button
         className="absolute m-3 top-0 right-0"
         onClick={() => clearGraphs()}
@@ -75,6 +75,6 @@ export default function GraphList() {
         </Button>
         
       </div>
-    </>
+    </div>
   );
 }
