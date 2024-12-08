@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from "react";
+import React, { useState} from "react";
 import { Container } from "@/components/ui/generic-card";
 import GraphWrapper, {
   EditSection,
@@ -157,11 +157,6 @@ export default function EgGraph() {
       </Table>
     );
   }
-
-  useEffect(() => {
-    console.log("Graph being rendered changed detected");
-    renderGraph(data, selfParams);
-  }, [data, selfParams]);
 
   return (
     <GraphWrapper>
